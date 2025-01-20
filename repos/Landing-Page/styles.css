@@ -1,0 +1,196 @@
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+background-color: #1F2937;
+margin: 0;
+display: flex;
+justify-content: space-around;
+}
+
+.header-right{
+    display: flex;
+    gap: 20px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+.logo{
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #1F2937;
+    padding: 32px;
+}
+
+.h1{
+display: flex;
+flex-wrap: wrap;
+width:400px;
+}
+h1{
+    width: 300px;
+    color: white;
+    margin-top:70px;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+p{
+    color:white;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    
+}
+
+.hero{
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+}
+
+button{
+    color: white;
+    background-color: #3882f6;
+    border-radius: 5px;
+    width: 90px;
+    border-color: transparent;
+    padding: 5px;
+}
+
+.img-container{
+    width: 450px;
+    background-color: grey;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:70px;
+    color: white;
+}
+
+.hero-content{
+    width: 20px;
+    margin-left:50px
+}
+
+.info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 160px;
+}
+.border-cont{
+    border: 5px solid #3882f6;
+    width: 160px;
+    height: 160px;
+    border-radius: 20px;
+}
+
+.text{
+    width: 200px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500px;
+}
+
+.testimonial{
+    background-color: #E5E7EB;
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    height: 300px;
+    align-items: end;
+}
+
+.quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.quote p{
+    color:black;
+    font-size: 36px;
+    width:50%;
+}
+
+.author{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 400px;
+    margin-bottom: 100px;
+}
+
+.author p{
+    color:#1F2937;
+    font-weight: 900;
+}
+
+
+.action{
+    background-color: #3882f6;
+    display: flex;
+    flex:1;
+    margin: 100px 300px 100px 300px;
+    border-radius: 5px;
+    justify-content: space-evenly;
+}
+
+.a-left{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    padding: 20px;
+}
+
+.a-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.sign-up{
+    color: white;
+    border-color: white;
+    border: 2px solid;
+}
+
+h3{
+    margin: 0;
+    color: white;
+    font-weight: 800;
+}
