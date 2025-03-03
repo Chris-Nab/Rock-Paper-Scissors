@@ -4,16 +4,26 @@ let computerScore = 0;
 let playGame = 0;
 
 function getHumanChoice(){
-    let choice = parseInt(prompt("Enter a number from 0 to 2"));
-    if(choice === 0){
-        choice = "Rock";
-    }
-    else if(choice === 1){
-        choice = "Paper";
-    }
-    else{
-        choice = "Scissors";
-    }
+    const btn_rock = document.querySelector("Rock");
+    const btn_paper = document.querySelector("Paper");
+    const btn_scissors = document.querySelector("Scissors");
+
+    let choice = "";
+
+    btn_rock.onclick = () => choice = "Rock";
+    btn_paper.onclick = () => choice = "Paper";
+    btn_scissors.onclick = () => choice = "Scissors";
+
+    // let choice = parseInt(prompt("Enter a number from 0 to 2"));
+    // if(choice === 0){
+    //     choice = "Rock";
+    // }
+    // else if(choice === 1){
+    //     choice = "Paper";
+    // }
+    // else{
+    //     choice = "Scissors";
+    // }
     return choice;
 }
 
@@ -72,14 +82,26 @@ function playRound(humanChoice, computerChoice){
 
 
 
-while(playGame < 5){
+// while(playGame < 5){
     humanChoice = getHumanChoice();
     computerChoice = getComputerChoice();
 
-    playRound(humanChoice, computerChoice);
+    start_btn = document.querySelector("#btn");
+
+    start_btn.onclick() = () => playRound(humanChoice, computerChoice);
     ++playGame;
+
+    let dispalyHumanScore = document.createElement("div");
+    dispalyHumanScore.textContent = 'Human Score is ${humanScore}';
+
+    let displayComputerScore = document.createElement("div");
+    displayComputerScore.textContent = 'Computer Score is ${computerScore}';
+
+    
+    document.body.appendChild(dispalyHumanScore);
+    document.body.appendChild(displayComputerScore);
 
     console.log("Your Score is:" + humanScore);
     console.log("Computer Score is:" + computerScore);
 
-}
+// }
